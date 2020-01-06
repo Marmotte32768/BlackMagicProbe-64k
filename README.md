@@ -6,4 +6,4 @@ Download the source code from https://github.com/blacksphere/blackmagic/
 
 Patch the source according to the supported JTAG target:
 
-- git apply lpc-only.patch for lpc11xx, lpc15xx, lpc43xx and lpc17xx
+- git apply lpc-only.patch for lpc11xx, lpc15xx, lpc43xx and lpc17xx JTAG target support
