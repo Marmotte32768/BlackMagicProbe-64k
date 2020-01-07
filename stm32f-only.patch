@@ -1,23 +1,16 @@
 diff --git a/src/target/cortexm.c b/src/target/cortexm.c
-index 95473ef..52f55b2 100644
+index 95473ef..371442f 100644
 --- a/src/target/cortexm.c
 +++ b/src/target/cortexm.c
-@@ -358,25 +358,25 @@ bool cortexm_probe(ADIv5_AP_t *ap, bool forced)
- #define PROBE(x) \
- 	do { if ((x)(t)) {target_halt_resume(t, 0); return true;} else target_check_error(t); } while (0)
+@@ -360,23 +360,23 @@ bool cortexm_probe(ADIv5_AP_t *ap, bool forced)
  
--	PROBE(stm32f1_probe);
--	PROBE(stm32f4_probe);
+ 	PROBE(stm32f1_probe);
+ 	PROBE(stm32f4_probe);
 -	PROBE(stm32h7_probe);
 -	PROBE(stm32l0_probe);   /* STM32L0xx & STM32L1xx */
 -	PROBE(stm32l4_probe);
-+//	PROBE(stm32f1_probe);
-+//	PROBE(stm32f4_probe);
-+//	PROBE(stm32h7_probe);
-+//	PROBE(stm32l0_probe);   /* STM32L0xx & STM32L1xx */
-+//	PROBE(stm32l4_probe);
- 	PROBE(lpc11xx_probe);
- 	PROBE(lpc15xx_probe);
+-	PROBE(lpc11xx_probe);
+-	PROBE(lpc15xx_probe);
 -	PROBE(lpc43xx_probe);
 -	PROBE(sam3x_probe);
 -	PROBE(sam4l_probe);
@@ -30,6 +23,11 @@ index 95473ef..52f55b2 100644
 -	PROBE(msp432_probe);
 -	PROBE(ke04_probe);
 -	PROBE(lpc17xx_probe);
++//	PROBE(stm32h7_probe);
++//	PROBE(stm32l0_probe);   /* STM32L0xx & STM32L1xx */
++//	PROBE(stm32l4_probe);
++//	PROBE(lpc11xx_probe);
++//	PROBE(lpc15xx_probe);
 +//	PROBE(lpc43xx_probe);
 +//	PROBE(sam3x_probe);
 +//	PROBE(sam4l_probe);
